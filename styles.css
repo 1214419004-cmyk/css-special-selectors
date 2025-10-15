@@ -1,0 +1,43 @@
+li:hover{
+    background-color: aqua;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+li:active{
+    background-color: lightgreen;
+    font-style: italic;
+}
+
+li::before{
+    content: "😭";
+}
+
+li:hover::after{
+    content: "Parry,Block,and Dodge";
+    margin-left: 1.50%;
+    font-weight: bold;
+    color: red;
+}
+
+li:active::before{
+    content: "😰";
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
