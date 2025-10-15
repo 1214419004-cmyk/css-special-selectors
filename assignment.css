@@ -1,6 +1,6 @@
 .card {
     width: 200px;
-    background-color: rgb(253, 228, 219);
+    background-color: rgb(255, 207, 215);
     padding: 20px;
     border: 2px solid coral;
     text-align: center;
@@ -11,5 +11,40 @@
     font-size: 80px;
 }
 
-/* Add your CSS styles below this line */
+.card p:hover::after{
+    content: "now $29";
+    margin-left: 4px;
+    color: red;
+}
 
+.card a{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border:2px solid coral;
+    border-radius: 3px;
+    background-color: coral;
+    color: white;
+}
+
+.card a:hover{
+    color: coral;
+    background-color: rgb(255, 207, 215);
+}
+
+.card a:active{
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.card::before{
+    content: "SALE";
+    font-size: 18px;
+    color: white;
+    padding: 4px;
+    border: 2px solid red;
+    border-radius: 100px;
+    background-color: red;
+}
